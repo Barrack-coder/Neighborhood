@@ -5,6 +5,6 @@ migrate:
 migrations:
 	python3 manage.py makemigrations ${name}
 superuser:
-	python3 manage.py createsuperuser --username ${name}
+	python3 manage.py createsuperuser --username ${name}                                 
 collectstatic:
 	python3 manage.py collectstatic
