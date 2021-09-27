@@ -1,5 +1,6 @@
 
 from django.conf.urls import url
+from django.urls.conf import path
 from . import views
 from django.conf import settings
 from django.conf.urls.static import static
@@ -10,7 +11,7 @@ urlpatterns=[
     url(r'^authorities',views.authorities, name='authorities'),
     url(r'^blog',views.blog, name='blog'),
     url(r'^new/blogpost$',views.new_blogpost, name='new-blogpost'), 
-    url(r'^view/blog/(\d+)',views.view_blog,name='view_blog'),
+    path('view/blog',views.view_blog,name='view_blog'),
 ] 
 
 
