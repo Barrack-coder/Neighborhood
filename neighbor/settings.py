@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'hood',
+    'cloudinary',
+    'rest_framework',
+    'bootstrap5'
     
 ]
 
