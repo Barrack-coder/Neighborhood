@@ -38,6 +38,14 @@ def health(request):
     return render(request,'health/health.html',)
 
 
+def notification(request):
+    return render(request,'notifications/notifications.html',)
+
+
+def new_notification(request):
+    return render(request,'notifications/notifications_form.html',)
+
+
 
 
 
