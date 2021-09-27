@@ -33,6 +33,9 @@ def new_business(request):
 def search_results(request):
         return render(request,'business/search.html',)
     
+    
+def health(request):
+    return render(request,'health/health.html',)
 
 
 
