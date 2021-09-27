@@ -39,11 +39,11 @@ def health(request):
 
 
 def notification(request):
-    return render(request,'notifications/notifications.html',)
+    return render(request,'notifications/notification.html',)
 
 
 def new_notification(request):
-    return render(request,'notifications/notifications_form.html',)
+    return render(request,'notifications/notification_form.html',)
 
 
 
