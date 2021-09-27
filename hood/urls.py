@@ -15,6 +15,7 @@ urlpatterns=[
     url(r'^buznesses',views.buznesses, name='buzness'),
     url(r'^new/business$',views.new_business, name='new-business'),
     url(r'^search/',views.search_results, name='search_results'),
+    url(r'^health',views.health, name='health'),
 ] 
 
 
