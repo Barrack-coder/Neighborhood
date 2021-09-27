@@ -47,5 +47,10 @@ def new_notification(request):
 
 
 
+def my_profile(request):
+    return render(request,'profile/user_profile.html',)
+
+
+
 
 
