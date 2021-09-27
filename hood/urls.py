@@ -12,6 +12,8 @@ urlpatterns=[
     url(r'^blog',views.blog, name='blog'),
     url(r'^new/blogpost$',views.new_blogpost, name='new-blogpost'), 
     path('view/blog',views.view_blog,name='view_blog'),
+    url(r'^buznesses',views.buznesses, name='buzness'),
+    url(r'^new/business$',views.new_business, name='new-business'),
 ] 
 
 

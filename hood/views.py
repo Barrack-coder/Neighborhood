@@ -21,4 +21,13 @@ def view_blog(request):
 
 
 
+def buznesses(request):
+    return render(request,'business/buznesses.html',)
+
+
+def new_business(request):
+    return render(request,'business/business_form.html',)
+
+
+
 
