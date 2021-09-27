@@ -16,6 +16,8 @@ urlpatterns=[
     url(r'^new/business$',views.new_business, name='new-business'),
     url(r'^search/',views.search_results, name='search_results'),
     url(r'^health',views.health, name='health'),
+    url(r'^notification',views.notification, name='notification'),
+    url(r'^new/notification$',views.new_notification, name='new-notification'),
 ] 
 
 
