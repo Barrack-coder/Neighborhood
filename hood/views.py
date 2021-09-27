@@ -32,6 +32,8 @@ def new_business(request):
 
 def search_results(request):
         return render(request,'business/search.html',)
+    
+
 
 
 
