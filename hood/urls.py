@@ -14,6 +14,7 @@ urlpatterns=[
     path('view/blog',views.view_blog,name='view_blog'),
     url(r'^buznesses',views.buznesses, name='buzness'),
     url(r'^new/business$',views.new_business, name='new-business'),
+    url(r'^search/',views.search_results, name='search_results'),
 ] 
 
 
