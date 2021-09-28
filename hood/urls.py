@@ -20,6 +20,7 @@ urlpatterns=[
     url(r'^new/notification$',views.new_notification, name='new-notification'),
     url(r'^my-profile/',views.my_profile, name='my-profile'),
     url(r'^update/profile$',views.update_profile, name='update-profile'),
+    path('user/',views.user_profile,name='user-profile'),
 ] 
 
 
