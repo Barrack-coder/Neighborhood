@@ -52,6 +52,11 @@ def my_profile(request):
 
 
 
+def update_profile(request):
+    return render(request,'profile/update_profile.html',)
+
+
+
 
 
 
