@@ -21,8 +21,8 @@ def view_blog(request):
 
 
 
-def buznesses(request):
-    return render(request,'business/buznesses.html',)
+def biznesses(request):
+    return render(request,'business/biznesses.html',)
 
 
 def new_business(request):
