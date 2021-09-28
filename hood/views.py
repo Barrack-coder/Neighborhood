@@ -56,6 +56,13 @@ def update_profile(request):
     return render(request,'profile/update_profile.html',)
 
 
+def user_profile(request):
+   return render(request,'profile/user_profile.html',)
+
+
+
+
+
 
 
 
