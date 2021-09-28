@@ -1,0 +1,46 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block styles%}
+
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+  rel="stylesheet"
+/>
+
+
+{%endblock %}
+
+{% block content %}
+
+<div class="text-center">
+    <div class="profile-image">
+        <img src="{{profile.profpic.url}}" class="img-rounded" alt="Profile Picture" width="304" height="236" ><hr>
+    </div>
+    <p style="font-size: 22px; font-weight:bold;margin:auto; padding:2px;">UserName: {{profile.username}}</p><hr>
+    <h4 style="font-size: 22px; font-weight:bold;margin:auto; padding:2px;">Bio: {{profile.description|safe}}</h4><hr>
+    <p style="font-size:14px;color:blue;font-weight:bold;">Contacts : {{profile.email}}</p>
+
+</div>
+
+<hr>
+
+   <!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+></script>
+
+{% endblock %}
