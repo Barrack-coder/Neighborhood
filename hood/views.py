@@ -1,9 +1,21 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
+from django.core.exceptions import ObjectDoesNotExist
+from django.http import HttpResponse,Http404,HttpResponseRedirect
+from .models import *
+
 
 # Create your views here.
 
 def index(request):
+    try:
+        if not request.user.is_authenticated:
+            return redirect('/accounts/login/')
+        current_user=request.user
+        profile =Profile.objects.get(username=current_user)
+    except ObjectDoesNotExist:
+        return redirect('create-profile')
     return render(request,'index.html',)
+
 
 def authorities(request):
     return render(request,'authorities/authorities.html',)
@@ -58,6 +70,15 @@ def update_profile(request):
 
 def user_profile(request):
    return render(request,'profile/user_profile.html',)
+
+
+def login(request):
+   return render(request,'registration/login.html',)
+
+
+
+def registration_form(request):
+   return render(request,'registration/registration_form.html',)
 
 
 
