@@ -6,8 +6,9 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
+
 urlpatterns=[
-    url(r'^$',views.index,name='Index'),
+    path('',views.index,name='index'),
     url(r'^authorities',views.authorities, name='authorities'),
     url(r'^blog',views.blog, name='blog'),
     url(r'^new/blogpost$',views.new_blogpost, name='new-blogpost'), 
@@ -20,10 +21,11 @@ urlpatterns=[
     url(r'^new/notification$',views.new_notification, name='new-notification'),
     url(r'^my-profile/',views.my_profile, name='my-profile'),
     url(r'^update/profile$',views.update_profile, name='update-profile'),
+    url(r'^create/profile$',views.create_profile, name='create-profile'),
     path('user/',views.user_profile,name='user-profile'),
     path('register',views.registration_form,name='registration_form'),
     path('login',views.login,name='login'),
-    # path('logout',views.logout,name='logout'),
+    path('logout',views.signout,name='logout'),
 ] 
 
 

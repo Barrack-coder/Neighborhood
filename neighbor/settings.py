@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'hood',
     'cloudinary',
     'rest_framework',
-    'bootstrap5'
+    'bootstrap5',
     
 ]
 
@@ -134,6 +134,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+AUTH_PROFILE_MODULE = 'hood.Profile'
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
